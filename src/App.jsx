@@ -5,8 +5,9 @@ import NavBar from './components/navBar.jsx';
 import Hero from './components/Hero.jsx';
 import Cocktails from './components/cocktails.jsx';
 import About from './components/about.jsx';
+import Art from './components/Art.jsx';
 gsap.registerPlugin(ScrollTrigger,SplitText);
-
+import './index.css'
 const App = () => {
   return (
     <main>
@@ -14,6 +15,7 @@ const App = () => {
         <Hero /> 
         <Cocktails />
          <About />
+         <Art />
     </main>
   )
 }
