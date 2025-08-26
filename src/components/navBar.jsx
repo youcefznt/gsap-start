@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLinks } from '../../constants'
 import {useGSAP} from '@gsap/react'
 import {gsap} from 'gsap'
+
 const NavBar = () => {
   useGSAP(() => {
     const navTween=gsap.timeline({
@@ -12,10 +13,10 @@ const NavBar = () => {
     })
     navTween.fromTo('nav',{
       backgroundColor:'transparent'}, 
-      {backgroundColor:'#0000050',
+      {backgroundColor:'rgba(0,0,0,0.5)',
         duration:0.3,
         ease:'power1.inOut',
-        backgroundFilter:'blur(10px)'
+        backdropFilter:'blur(10px)'
       }
     )
   }, [])
